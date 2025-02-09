@@ -63,17 +63,34 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-    console.log('Service Worker: Fetch', event.request.url);
     event.respondWith(
         caches.match(event.request).then(response => {
-            return response || fetch(event.request).catch(() => {
-                if (event.request.mode === 'navigate') {
-                    return caches.match('/offline.html');
-                }
-            });
-        }).catch(error => {
-            console.error('Error en fetch:', error);
-            return new Response('Offline', { status: 500 });
+           
+            if (response) {
+                return response;
+            }
+
+           
+            return fetch(event.request)
+                .then(networkResponse => {
+                    if (!networkResponse || networkResponse.status !== 200) {
+                        throw new Error('Respuesta de red no válida');
+                    }
+
+                    
+                    let responseClone = networkResponse.clone();
+                    caches.open('mi-cache-v1').then(cache => {
+                        cache.put(event.request, responseClone);
+                    });
+
+                    return networkResponse;
+                })
+                .catch(() => {
+                    
+                    if (event.request.mode === 'navigate') {
+                        return caches.match('/offline.html');
+                    }
+                });
         })
     );
 });
