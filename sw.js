@@ -37,7 +37,7 @@ const URLS_TO_CACHE = [
   "/imagenes/valor.png"   
 ];
 
-// ─── INSTALACIÓN: Guardar archivos en caché ───────────────────────────────
+
 self.addEventListener('install', event => {
   console.log('✅ Service Worker: Instalado');
   event.waitUntil(
@@ -53,7 +53,7 @@ self.addEventListener('install', event => {
   );
 });
 
-// ─── ACTIVACIÓN: Eliminar cachés antiguos ───────────────────────────────────
+
 self.addEventListener('activate', event => {
   console.log('✅ Service Worker: Activado');
   event.waitUntil(
@@ -71,22 +71,22 @@ self.addEventListener('activate', event => {
   return self.clients.claim();
 });
 
-// ─── FETCH: Interceptar solicitudes ─────────────────────────────────────────
+
 self.addEventListener('fetch', event => {
   console.log('⚡ Fetch:', event.request.url);
   
-  // Ignorar solicitudes a favicon.ico para evitar errores
+
   if (event.request.url.includes('favicon.ico')) {
     event.respondWith(new Response(null, { status: 204, statusText: 'No Content' }));
     return;
   }
   
-  // Si se trata de una solicitud de navegación (HTML)
+
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
         .then(networkResponse => {
-          // Si es una página HTML, guárdala en caché
+
           if (event.request.url.endsWith('.html')) {
             let responseClone = networkResponse.clone();
             caches.open(CACHE_NAME).then(cache => {
@@ -104,7 +104,7 @@ self.addEventListener('fetch', event => {
     return;
   }
   
-  // Para otros recursos (CSS, JS, imágenes, etc.)
+
   event.respondWith(
     caches.match(event.request)
       .then(cachedResponse => {
@@ -114,7 +114,7 @@ self.addEventListener('fetch', event => {
         }
         return fetch(event.request)
           .then(networkResponse => {
-            // Si es HTML, opcionalmente guárdalo en caché
+
             if (event.request.url.endsWith('.html')) {
               let responseClone = networkResponse.clone();
               caches.open(CACHE_NAME).then(cache => {
@@ -127,7 +127,7 @@ self.addEventListener('fetch', event => {
       })
       .catch(() => {
         console.warn('⚠ Archivo no disponible:', event.request.url);
-        // Retorna una respuesta por defecto para evitar errores
+
         return new Response('', { status: 404, statusText: 'Not Found' });
       })
   );
