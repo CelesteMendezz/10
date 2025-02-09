@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yantramanav", sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Yantramanav", sans-serif; 
+    
+}
+
+
+.menu-navegacion {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181848;
+    text-align: center;
+    height: 50px;
+}
+
+.menu-navegacion a {
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-family: "Yantramanav", sans-serif; 
+    margin: 20px;
+}
+
+.menu-navegacion a:hover {
+    color: #f0a818;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.logo {
+    max-width: 300px; 
+}
+
+h1{
+    color:#181848;
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.bienvenida{
+padding-top: 80px;
+
+}
+
+.introduccion-video {
+    text-align: justify;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.introduccion-video iframe {
+    margin-right: 20px;
+    flex-shrink: 0
+}
+
+.introduccion-video p {
+    font-family: "Yantramanav", sans-serif; 
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.contain {
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    margin-bottom: 20px; 
+}
+
+.item img {
+    width: 100px;
+    height: auto;
+}
+
+.item p {
+    margin: 10px 0 0 0; 
+    font-weight: 500;
+    font-size: 20px; 
+}
+
+
+.contenido{
+    display: flexbox;
+    font-weight: 400px;
+    margin: 50px;
+}
+
+.contenido2 {
+    font-weight: 400;
+    font-size: 18px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.contenido2 img{
+    width: 100px;
+    height: auto;
+}
+
+footer{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #181848;
+    justify-content: space-between;
+}
+.contacto {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.contacto p {
+    font-weight: 400;
+    font-size: 20px;
+    color:white;
+    margin: 0; 
+}
+
+.footer-logo{
+    margin-left: 120px;
+    width: 400px;
+    height: 500;
+    margin-right: 10px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-info p {
+    margin: 40;
+    color:white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 90px;
+}
+
+.iconos {
+    filter: invert(100%); 
+}
+
+.iconos img{
+    margin-right: 1px;
+}
+
+.ubi{
+    margin: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+    }
+}
+
+
+.invitacion p{
+    margin-left: 90px;
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+
+.invitacion img {
+    height: 500px;
+}
+
+.egreso {
+    font-family: "Yantramanav", sans-serif; 
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px; 
+    margin-right: 90px;
+}
+.egreso img{
+    width: 600px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.campo{
+
+    font-family: "Yantramanav", sans-serif; 
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px; 
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.campo img{
+    width: 600px;
+    height: 400px;
+    margin-right: 20px;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="imagenes/icon.png">
+<title>Licenciatura en Ingeniería de Software</title>
+</head>
+<STYLE>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yantramanav", sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Yantramanav", sans-serif; 
+    
+}
+
+
+.menu-navegacion {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181848;
+    text-align: center;
+    height: 50px;
+}
+
+.menu-navegacion a {
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-family: "Yantramanav", sans-serif; 
+    margin: 20px;
+}
+
+.menu-navegacion a:hover {
+    color: #f0a818;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.logo {
+    max-width: 300px; 
+}
+
+h1{
+    color:#181848;
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.bienvenida{
+padding-top: 80px;
+
+}
+
+footer{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #181848;
+    justify-content: space-between;
+}
+.contacto {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.contacto p {
+    font-weight: 400;
+    font-size: 20px;
+    color:white;
+    margin: 0; 
+}
+
+.footer-logo{
+    margin-left: 120px;
+    width: 400px;
+    height: 500;
+    margin-right: 10px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-info p {
+    margin: 40;
+    color:white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 90px;
+}
+
+.iconos {
+    filter: invert(100%); 
+}
+
+.iconos img{
+    margin-right: 1px;
+}
+
+.ubi{
+    margin: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+    }
+}
+
+
+.contacto {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.contacto p {
+    font-weight: 400;
+    font-size: 20px;
+    color:white;
+    margin: 0; 
+}
+
+
+.seccion-contacto {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #e6f0ff;
+  border: 1px solid #cce0ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-contacto .texto-intro {
+  text-align: center;
+  color: #00509e;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.informacion-contacto {
+  margin-bottom: 30px;
+}
+
+.informacion-contacto h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.informacion-contacto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.informacion-contacto li {
+  color: #00509e;
+  margin: 5px 0;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto h3 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.formulario-contacto .campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto label {
+  margin-bottom: 5px;
+  color: #004080;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cce0ff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formulario-contacto button {
+  padding: 10px;
+  background-color: #004d99;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #003366;
+}
+
+</STYLE>
+<body>
+    
+    <header>
+        <nav class="menu-navegacion">
+          <a href="index.html">Inicio</a>
+          <a href="oferta_educativa.html">Oferta Educativa</a>
+          <div class="logo-container">
+            <img src="imagenes/escudo.png" alt="Logo" class="logo">
+        </div>
+          <a href="plan.html">Plan de Estudios</a>
+          <a href="contactanos.html">Contáctanos</a>
+      </nav>
+      </header>
+      <h1 class="bienvenida">Contáctanos</h1>
+      <section class="seccion-contacto">
+        <p class="texto-intro">¿Tienes alguna pregunta o necesitas ayuda? No dudes en contactarnos. Estamos aquí para ayudarte.</p>
+      
+        <div class="informacion-contacto">
+          <h3>Información de Contacto</h3>
+          <ul>
+            <li>Dirección: Sergio Butrón Casas 19, La Ranchería, Centro, 42780 Tlahuelilpan, Hgo.</li>
+            <li>Teléfono: +527717172000</li>
+            <li>Horario de atención: Lunes a Sabado de 7:00am a 8:00pm </li>
+          </ul>
+        </div>
+      
+        <div class="formulario-contacto">
+          <h3>Formulario de Contacto</h3>
+          <form action="https://m.youtube.com/watch?v=8ZfceEEFar8" method="post">
+            <div class="campo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+              <label for="correo_electronico">Correo electrónico:</label>
+              <input type="email" id="correo_electronico" name="correo_electronico" required>
+            </div>
+            <div class="campo">
+              <label for="asunto">Asunto:</label>
+              <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <div class="campo">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar Mensaje</button>
+          </form>
+        </div>
+      </section>
+      
+
+
+      <footer id="ubicacion">
+        <div class="footer-info">
+          <img class="footer-logo" src="imagenes/escuelasuperior.png">
+          <br><br><br>
+          <p>Av. Universidad 3004, Copilco Universidad,<br> Coyoacán, 04510 Ciudad de México, CDMX</p>
+      </div>
+          <iframe class="ubi"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481940.39948932175!2d-99.76114982656249!3d19.318889500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00071fca0bad%3A0x9989fa5b4f526717!2sUniversidad%20Nacional%20Aut%C3%B3noma%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1737595528056!5m2!1ses!2smx"  width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        <div class="contacto">
+          <p>E-Mail: esc_sup_@unam.edu.mx</p>
+          <br>
+      </div>
+      <div class="contacto">
+          <p>Tel: +52 (771) 717-2000 ext 5501 y 5503</p>
+      </div>
+      </footer> 
+  
+  </body>

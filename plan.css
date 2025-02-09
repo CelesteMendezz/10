@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yantramanav", sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Yantramanav", sans-serif; 
+    
+}
+
+
+.menu-navegacion {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181848;
+    text-align: center;
+    height: 50px;
+}
+
+.menu-navegacion a {
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-family: "Yantramanav", sans-serif; 
+    margin: 20px;
+}
+
+.menu-navegacion a:hover {
+    color: #f0a818;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.logo {
+    max-width: 300px; 
+}
+
+h1{
+    color:#181848;
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+footer{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #181848;
+    justify-content: space-between;
+}
+.contacto {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.contacto p {
+    font-weight: 400;
+    font-size: 20px;
+    color:white;
+    margin: 0; 
+}
+
+.footer-logo{
+    margin-left: 120px;
+    width: 400px;
+    height: 500;
+    margin-right: 10px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-info p {
+    margin: 40;
+    color:white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 90px;
+}
+
+.iconos {
+    filter: invert(100%); 
+}
+
+.iconos img{
+    margin-right: 1px;
+}
+
+.ubi{
+    margin: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+    }
+}
+
+table {
+    border-spacing: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 80%;
+    margin: 50px auto;
+}
+table li{
+    list-style: none;
+}
+
+th, td {
+    border: 1px solid #f0a818;
+    width: 100px;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+th{
+    background-color: #f0a818;
+    color:#181848;
+    font-weight: 600;
+    font-size: 20px;
+}

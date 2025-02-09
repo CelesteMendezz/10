@@ -1,0 +1,38 @@
+{
+    "name": "Universidad Nacional Autónoma de México",
+    "short_name": "UNAM",
+    "description": "Plataforma educativa",
+    "lang":"es-mx",
+    "display": "standalone", 
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "orientation": "portrait",
+    "icons":[
+        {
+            "src": "./imagenes/icono1.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./imagenes/icono2.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+  "screenshots": [
+    {
+      "src": "./imagenes/inicio_cap.png",
+      "sizes": "1484x810",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./imagenes/plan_cap.png",
+      "sizes": "1490x789",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+    ],
+    "id":"index.html",
+    "start_url": "index.html"
+}
